@@ -19,11 +19,11 @@ De Casteljau's algorithm provides an elegant method for constructing bezier curv
 It does it recursively, as follows:
 
 For every $t \in [0,1]$,
-1. First, start with n points $P_0, P_1, ..., P_{n-1}$
+1. First, start with $n$ points $P_0, P_1, ..., P_{n-1}$
 2. Lerp between each line segment $\overline{P_0P_1}, \overline{P_1P_2}, ..., \overline{P_{n-2}P_{n-1}}$  to get $n-1$ points
 3. Go to step 1
 
-The recursion ends when there is 1 point left — $P(t)$.
+The recursion ends when there is exactly one point left — $P(t)$.
 
 ### Proof
 Using De Casteljau's algorithm, we can deduce the formula of a cubic bezier curve. We start with four points $P_0, P_1, P_2, P_3$.
