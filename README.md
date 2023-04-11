@@ -112,7 +112,7 @@ $$P_1(1)=P_2(0)$$
 We can plug in the formula for the velocity vector and evaluate them at t=1 and t=0 respectively.
 
 $$\eqalign{
-&3(-P_0+3P_1-3P_2+P_3)(1)^2+6(P_0-P_1+P_2)(1)+3(-P_0+P_1)
+&3(-P_0+3P_1-3P_2+P_3)(1)^2+6(P_0-P_1+P_2)(1)+3(-P_0+P_1) \\
 = &3(-P_3+3P_4-3P_5+P_6)(0)^2+6(P_3-P_4+P_5)(0)+3(-P_3+P_4)
 }$$
 
