@@ -7,6 +7,7 @@ This is the formula of the cubic bézier curve we are aiming to proof:
 $$P(t) = (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
 
 ### Linear interpolation
+
 Linear interpolation (lerp) is defined as a linear parametrization of the line between two points.
 Therefore, it can be described by two points $P_0, P_1$ and a parameter $t$.
 The t-value can be thought of as a percentage of how much the point $P$ it is on the way to $P_1$.
