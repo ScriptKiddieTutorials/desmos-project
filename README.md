@@ -39,12 +39,11 @@ $$C=(1-t)P_2+tP_3$$
 
 Iteration #2
 
-$$D = (1-t)A+tB$$
-
-$$= (1-t)^2P_0+(1-t)tP_1 + t(1-t)P_1+t^2P_2$$
-
-$$= (1-t)^2P_0+2(1-t)tP_1+t^2P_2$$
-
+$$\eqalign{
+D &= (1-t)A+tB \\
+        &= (1-t)^2P_0+(1-t)tP_1 + t(1-t)P_1+t^2P_2 \\
+        &= (1-t)^2P_0+2(1-t)tP_1+t^2P_2
+}$$
 
 
 $$E = (1-t)B+tC$$
@@ -57,6 +56,7 @@ $$= (1-t)^2P_1+2(1-t)tP_2+t^2P_3$$
 
 Iteration #3
 
+
 $$P=(1-t)D+tE$$
 
 $$= (1-t)^3P_0+2(1-t)^2tP_1+(1-t)t^2P_2 + (1-t)^2tP_1+2(1-t)t^2P_2+t^3P_3$$
@@ -68,11 +68,7 @@ Thus, we arrive at the [Bernstein polynomial form](https://en.wikipedia.org/wiki
 $$P(t) = (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
 
 
-$$\eqalign{
-(a+b)^2 &= (a+b)(a+b) \\
-        &= a^2 + ab + ba + b^2 \\
-        &= a^2 + 2ab + b^2
-}$$
+
  
  
 ## Proof of C1 continuity
