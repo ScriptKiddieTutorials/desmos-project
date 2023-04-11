@@ -68,9 +68,11 @@ $$P(t) = (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
  
 ## Proof of condition for C<sup>1</sup> continuity
 ## Derivation of velocity vector
-We aim to proof that in order for two cubic bézier curves $P_0P_1P_2P_3$ and $P_3P_4P_5P_6$ to be C1 continuous (i.e. differentiable) at point P3, they must satisfy
+We aim to proof that in order for two cubic bézier curves $P_0P_1P_2P_3$ and $P_3P_4P_5P_6$ to be $C^1$ continuous (i.e. differentiable) at point $P_3$, they must satisfy
 
 $$P_4=\frac{P_3+P_5}{2}$$
+
+
 The formula we derived for a cubic bézier curve is:
 
 $$P(t) = (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
