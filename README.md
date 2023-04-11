@@ -66,5 +66,24 @@ $$P(t) = (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
 
 
  
-## Proof of C<sup>1</sup> continuity
+## Proof of condition for C<sup>1</sup> continuity
 [Cubic Bézier Curve C<sup>1</sup> Continuity Proof](https://docs.google.com/document/d/1yOPxu6LAcAWaRyBlGrb4e02S1lrvkTArEI2bsm8eq4w/edit?usp=sharing)
+We aim to proof that in order for two cubic bézier curves $P_0P_1P_2P_3$ and $P_3P_4P_5P_6$ to be C1 continuous (i.e. differentiable) at point P3, they must satisfy
+
+$$P_4=\frac{P_3+P_5}{2}$$
+The formula we derived for a cubic bézier curve is:
+
+$$P(t) = (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
+
+
+Now, instead of grouping the terms based on points, we can expand it,
+
+$$\eqalign{
+P(t) = &P_0(-t^3+3t^2-3t+1) \\
+        &+P_1(3t^3-6t^2+3t)  \\
+        &+P_2(-3t^3+3t^2) \\
+        &+P_3(t^3)
+}$$
+
+and write it as a polynomial of $t$.
+
