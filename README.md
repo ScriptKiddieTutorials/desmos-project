@@ -79,7 +79,7 @@ $$P(t) = (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
 Now, instead of grouping the terms based on points, we can expand it,
 
 $$\eqalign{
-P(t) = &P_0(-t^3+3t^2-3t+1) \\
+P(t) &= P_0(-t^3+3t^2-3t+1) \\
         &+P_1(3t^3-6t^2+3t)  \\
         &+P_2(-3t^3+3t^2) \\
         &+P_3(t^3)
