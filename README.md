@@ -45,23 +45,20 @@ D &= (1-t)A+tB \\
         &= (1-t)^2P_0+2(1-t)tP_1+t^2P_2
 }$$
 
-
-$$E = (1-t)B+tC$$
-
-$$= (1-t)^2P_1+(1-t)tP_2 + t(1-t)P_2+t^2P_3$$
-
-$$= (1-t)^2P_1+2(1-t)tP_2+t^2P_3$$
-
+$$\eqalign{
+E &= (1-t)B+tC \\
+        &= (1-t)^2P_1+(1-t)tP_2 + t(1-t)P_2+t^2P_3 \\
+        &= (1-t)^2P_1+2(1-t)tP_2+t^2P_3
+}$$
 
 
 Iteration #3
 
-
-$$P=(1-t)D+tE$$
-
-$$= (1-t)^3P_0+2(1-t)^2tP_1+(1-t)t^2P_2 + (1-t)^2tP_1+2(1-t)t^2P_2+t^3P_3$$
-
-$$= (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
+$$\eqalign{
+P &= (1-t)D+tE \\
+        &= (1-t)^3P_0+2(1-t)^2tP_1+(1-t)t^2P_2 + (1-t)^2tP_1+2(1-t)t^2P_2+t^3P_3 \\
+        &= (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3
+}$$
 
 Thus, we arrive at the [Bernstein polynomial form](https://en.wikipedia.org/wiki/Bernstein_polynomial) of a cubic bezier curve:
 
