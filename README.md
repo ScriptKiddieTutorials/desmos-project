@@ -68,5 +68,12 @@ Thus, we arrive at the [Bernstein polynomial form](https://en.wikipedia.org/wiki
 $$P(t) = (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
 
 
+$$\eqalign{
+(a+b)^2 &= (a+b)(a+b) \\
+        &= a^2 + ab + ba + b^2 \\
+        &= a^2 + 2ab + b^2
+}$$
+ 
+ 
 ## Proof of C1 continuity
 [Cubic Bézier Curve C1 Continuity Proof](https://docs.google.com/document/d/1yOPxu6LAcAWaRyBlGrb4e02S1lrvkTArEI2bsm8eq4w/edit?usp=sharing)
