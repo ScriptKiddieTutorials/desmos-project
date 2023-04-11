@@ -17,17 +17,15 @@ $$C=(1-t)P_2+tP_3$$
 
 Second lerp
 
-```math
-D=(1-t)A+tB \\
-E=(1-t)B+tC
-```
+$$D=(1-t)A+tB$$
+
+$$E=(1-t)B+tC$$
 
 
-Final lerp
 
-```math
-F=(1-t)D+tE
-```
+Third lerp
+
+$$F=(1-t)D+tE$$
 
 
 ## Proof of C1 continuity
