@@ -79,11 +79,26 @@ $$P(t) = (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
 Now, instead of grouping the terms based on points, we can expand it,
 
 $$\eqalign{
-P(t)&=P_0(-t^3+3t^2-3t+1) \\
+P(t) &= P_0(-t^3+3t^2-3t+1) \\
         &+P_1(3t^3-6t^2+3t)  \\
         &+P_2(-3t^3+3t^2) \\
         &+P_3(t^3)
 }$$
 
 and write it as a polynomial of $t$.
+
+$$\eqalign{
+P(t) &= (-P_0+3P_1-3P_2+P_3)t^3 \\
+        &+3(P_0-2P_1+P_2)t^2  \\
+        &+3(-P_0+P_1)t \\
+        &+P_0
+}$$
+
+Then, take the derivative with respect to $t$. This gives the velocity vector associated at every t-value.
+
+$$\eqalign{
+P'(t) &= 3(-P_0+3P_1-3P_2+P_3)t^2 \\
+        &+6(P_0-P_1+P_2)t  \\
+        &+3(-P_0+P_1)
+}$$
 
