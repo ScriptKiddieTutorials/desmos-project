@@ -18,10 +18,10 @@ $$ P(t) = (1-t)P_0 + tP_1$$
 De Casteljau's algorithm provides an elegant method for constructing bezier curves.
 It does it recursively, as follows:
 
-For every $t \in [0,1]$,
+For every $t \in [0,1]$
 1. First, start with $n$ points $P_0, P_1, ..., P_{n-1}$
-2. Lerp between each line segment $\overline{P_0P_1}, \overline{P_1P_2}, ..., \overline{P_{n-2}P_{n-1}}$  to get $n-1$ points
-3. Go to step 1
+2. Lerp between each line segment $\overline{P_0P_1}, \overline{P_1P_2}, ..., \overline{P_{n-2}P_{n-1}}$ using parameter $t$.
+3. Go to step 1 with $n-1$ new points
 
 The recursion ends when there is exactly one point left — $P(t)$.
 
