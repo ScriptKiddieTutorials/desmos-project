@@ -26,6 +26,7 @@ For every $t \in [0,1]$,
 The recursion ends when there is 1 point left — $P(t)$.
 
 Using this, we can deduce the formula of a cubic bezier curve. We start with four points $P_0, P_1, P_2, P_3$.
+
 Iteration #1
 
 $$A=(1-t)P_0+tP_1$$
