@@ -15,7 +15,7 @@ The t-value can be thought of as a percentage of how much the point $P$ it is on
 $$ P(t) = (1-t)P_0 + tP_1$$
 
 ### De Casteljau's algorithm
-[De Casteljau's algorithm](https://en.wikipedia.org/wiki/De_Casteljau%27s_algorithm) provides an elegant method for constructing bezier curves.
+[De Casteljau's algorithm](https://en.wikipedia.org/wiki/De_Casteljau%27s_algorithm) provides an elegant approach for constructing bezier curves.
 It does it recursively, as follows:
 
 For every $t \in [0,1]$
@@ -68,5 +68,5 @@ $$P(t) = (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
 
  
  
-## Proof of C1 continuity
-[Cubic Bézier Curve C1 Continuity Proof](https://docs.google.com/document/d/1yOPxu6LAcAWaRyBlGrb4e02S1lrvkTArEI2bsm8eq4w/edit?usp=sharing)
+## Proof of C^1 continuity
+[Cubic Bézier Curve C^1 Continuity Proof](https://docs.google.com/document/d/1yOPxu6LAcAWaRyBlGrb4e02S1lrvkTArEI2bsm8eq4w/edit?usp=sharing)
