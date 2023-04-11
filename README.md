@@ -3,7 +3,7 @@
 ## Proof of formula
 
 ### Formula
-This is the formula of the cubic bézier curve we are aiming to proof:
+This is the formula of a cubic bézier curve we are aiming to proof:
 $$P(t) = (1-t)^3P_0+3(1-t)^2tP_1+3(1-t)t^2P_2+t^3P_3$$
 
 ### Linear interpolation
@@ -35,6 +35,12 @@ $$A=(1-t)P_0+tP_1$$
 $$B=(1-t)P_1+tP_2$$
 
 $$C=(1-t)P_2+tP_3$$
+
+$$\eqalign{
+A=(1-t)P_0+tP_1 \\
+B=(1-t)P_1+tP_2 \\
+C=(1-t)P_2+tP_3
+}$$
 
 
 Iteration #2
