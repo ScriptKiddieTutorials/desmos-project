@@ -15,7 +15,7 @@ The t-value can be thought of as a percentage of how much the point $P$ it is on
 $$ P(t) = (1-t)P_0 + tP_1$$
 
 ### Proof
-De Casteljau's algorithm provides an elegant method to construct bezier curves.
+De Casteljau's algorithm provides an elegant method for constructing bezier curves.
 It does it recursively, as follows:
 
 For every $t \in [0,1]$,
@@ -25,6 +25,7 @@ For every $t \in [0,1]$,
 
 The recursion ends when there is 1 point left — $P(t)$.
 
+Using this, we can deduce the formula of a cubic bezier curve. We start with four points $P_0, P_1, P_2, P_3$.
 Iteration #1
 
 $$A=(1-t)P_0+tP_1$$
@@ -44,7 +45,7 @@ $$E=(1-t)B+tC$$
 
 Iteration #3
 
-$$F=(1-t)D+tE$$
+$$P=(1-t)D+tE$$
 
 
 ## Proof of C1 continuity
