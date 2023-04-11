@@ -11,7 +11,7 @@ Linear interpolation (lerp) is defined as a linear parametrization of the line b
 Therefore, it can be described by two points $P_0, P_1$ and a parameter $t$.
 The t-value can be thought of as a percentage of how much the point $P$ it is on the way to $P_1$.
 
-$$ P = (1-t)P_0 + tP_1$$
+$$ P(t) = (1-t)P_0 + tP_1$$
 
 ### Proof
 
