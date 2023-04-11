@@ -16,13 +16,15 @@ $$ P(t) = (1-t)P_0 + tP_1$$
 
 ### Proof
 De Casteljau's algorithm provides an elegant method to construct bezier curves.
-It does it recursively:
+It does it recursively, as follows:
+For every $t \in [0,1]$,
 1. First, start with n points $P_0, P_1, ..., P_{n-1}$
-2. Lerp between each line segment $\overline{P_0P_1}, \overline{P_1P_2}, ..., \overline{P_{n-2}P_{n-1}}$
+2. Lerp between each line segment $\overline{P_0P_1}, \overline{P_1P_2}, ..., \overline{P_{n-2}P_{n-1}}$  to get $n-1$ points
 3. Go to step 1
 
+The recursion ends when there is 1 point left — $P(t)$.
 
-First lerp
+Iteration #1
 
 $$A=(1-t)P_0+tP_1$$
 
@@ -31,7 +33,7 @@ $$B=(1-t)P_1+tP_2$$
 $$C=(1-t)P_2+tP_3$$
 
 
-Second lerp
+Iteration #2
 
 $$D=(1-t)A+tB$$
 
@@ -39,7 +41,7 @@ $$E=(1-t)B+tC$$
 
 
 
-Third lerp
+Iteration #3
 
 $$F=(1-t)D+tE$$
 
